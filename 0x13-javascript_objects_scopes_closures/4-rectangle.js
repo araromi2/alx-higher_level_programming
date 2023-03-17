@@ -8,19 +8,20 @@ class Rectangle {
   }
 
   print () {
+    let arr = [];
     for (let i = 0; i < this.height; i++) {
-      let s = '';
       for (let j = 0; j < this.width; j++) {
-        s += 'X';
+        arr += 'X';
       }
-      console.log(s);
+      console.log(arr);
+      arr = [];
     }
   }
 
   rotate () {
-    const aux = this.width;
+    const x = this.width;
     this.width = this.height;
-    this.height = aux;
+    this.height = x;
   }
 
   double () {
@@ -28,5 +29,4 @@ class Rectangle {
     this.height *= 2;
   }
 }
-
 module.exports = Rectangle;
