@@ -1,4 +1,5 @@
 -- creates a second_table in the database htbn_0c_0
+-- The database name will be passed as an argument of the mysql command
 CREATE TABLE IF NOT EXISTS second_table (
 id INT,
 name VARCHAR(256),
